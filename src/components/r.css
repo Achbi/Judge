@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ::-webkit-scrollbar {
+ display: none;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    text-align: center;
+  }
+  
+  .app-header {
+    background-color: #d3d3d3;
+    padding: 20px;
+  }
+  
+  .main-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .chatbot-section {
+    width: 50%;
+    background-color: #e6f5cc;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+  
+  .decision-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+  }
+  
+  .ai-decision, .judge-decision {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .chatbot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 400px;
+    justify-content: space-between;
+  }
+  
+  .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+  }
+  
+  .chat-message.user {
+    background-color: #8fc866;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  .chat-message.bot {
+    background-color: #f2f2f2;
+    color: black;
+    text-align: left;
+  }
+  
+  .chat-input-section {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+   
+    
+  }
+  .chat-input-section input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #140d0d;
+  }
+ 
+  
+  
+  #chatInput {
+   
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #140d0d;
+    
+  }
+  
+  .pdf-button {
+
+    background-color:#ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #e66868;
+  }
+  
+  .submit-button {
+    padding: 10px;
+    background-color: #8fc866;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .analog-meter {
+    position: relative;
+  }
+  
+  .meter {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    position: relative;
+  }
+  
+  .needle {
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    background-color: red;
+    transform-origin: bottom center;
+    transform: rotate(45deg); /* Adjust rotation to fit the image */
+    bottom: 50%;
+    left: 50%;
+  }
+  
+  .green-zone {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: green;
+    border-bottom-left-radius: 100%;
+  }
+  
+  .red-zone {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    border-bottom-right-radius: 100%;
+  }
+  
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .accept-button {
+    background-color: #8fc866;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .reject-button {
+    background-color: #e66868;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+  }
